@@ -20,7 +20,7 @@ configs:
 # InceptionV1 curve-detector concept swaps
 
 This dataset holds the stimuli and per-pair outcomes from
-[counterfactually-causal-analysis-of-convolutional-neural-networks-with-concept-swaps](https://github.com/BurnyCoder/counterfactually-causal-analysis-of-convolutional-neural-networks-with-concept-swaps).
+[causal-counterfactual-analysis-of-convolutional-neural-networks-with-concept-swaps-interventions](https://github.com/BurnyCoder/causal-counterfactual-analysis-of-convolutional-neural-networks-with-concept-swaps-interventions).
 That repository tests causally whether the 10 InceptionV1 `mixed3b` curve detectors
 ([Cammarata et al. 2020](https://distill.pub/2020/circuits/curve-detectors/)) mediate curve orientation for the next
 layer, using interchange interventions ([Huang et al. 2023](https://arxiv.org/abs/2309.10312)).
