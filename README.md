@@ -468,8 +468,9 @@ The |Δθ| bins are a pre-registered exploratory analysis computed by the pipeli
 the per-pair file `data/pairs_h1_confirmatory.csv` in the
 [Hugging Face dataset](https://huggingface.co/datasets/BurnyCoder/inceptionv1-curve-concept-swaps), which
 `--phase export` writes locally to `hf_export/data/`. It is not corrected for multiple comparisons. CIs use the
-pipeline's pigeonhole bootstrap (B = 2000, seed 0), run separately within each subset; other seeds move the bounds by up
-to about 0.5 percentage points.
+pipeline's pigeonhole bootstrap (B = 2000, seed 0), drawn once over all 4,574 eligible pairs, with each subset's rate
+and each difference computed under the same replicate weights; other seeds move the bounds by up to about 0.6
+percentage points.
 
 - **Orientation gap** ([results.md](reports/generated/results.md?plain=1#L69-L75)):
   - 30–60°: 11.1%
@@ -478,9 +479,9 @@ to about 0.5 percentage points.
   - 120–150°: 30.3%
   - 150–180°: 14.9%
 - **Arc size:**
-  - Radius 30 px: 22.6% [17.7, 27.7]; 45 px: 19.7%; 60 px: 15.3%; 80 px: 13.5% [9.8, 17.2].
+  - Radius 30 px: 22.6% [17.9, 27.9]; 45 px: 19.7%; 60 px: 15.3%; 80 px: 13.5% [9.9, 17.4].
   - Radius 30 minus radius 80: +9.2 percentage points [2.9, 15.6].
-- **Contrast:** light-on-dark 20.7% [17.5, 24.1] vs dark-on-light 14.7% [12.1, 17.5]; the difference is +6.0
+- **Contrast:** light-on-dark 20.7% [17.4, 24.2] vs dark-on-light 14.7% [12.1, 17.5]; the difference is +6.0
   percentage points [2.0, 10.2].
 - **Line width:** 3 px 17.0%, 5 px 18.5%.
 - **Source orientation:**
