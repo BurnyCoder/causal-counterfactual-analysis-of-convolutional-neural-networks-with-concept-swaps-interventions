@@ -270,4 +270,4 @@ Run log: `logs/20261023_230809.log`. Tables: [`generated/results.md`](generated/
   - The unit test `test_readout_additivity_is_structural_only_for_1x1_and_pool_branches` confirms the architectural
     part: with sparse random inputs, the 3×3 and 5×5 branches are not additive.
   - The projected effects still sum to 1 within about 0.001 in every group (largest deviation 0.0011, in the 5×5
-    branch and its 8 readout units): the interaction is almost orthogonal to the base-to-source direction.
+    branch; 0.0006 for its 8 readout units): the interaction is almost orthogonal to the base-to-source direction.
