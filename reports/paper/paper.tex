@@ -214,7 +214,7 @@ Counterfactual concept swaps turn the Circuits curve-detector explanation into a
 
 \appendix
 \section{Reproducibility and statistics details}
-Code, tests and the pre-registration are at \url{https://github.com/BurnyCoder/counterfactually-causal-analysis-of-convolutional-neural-networks-with-concept-swaps}. Per-pair data are in the Hugging Face dataset \url{https://huggingface.co/datasets/BurnyCoder/inceptionv1-curve-concept-swaps}. All numbers in this paper are \LaTeX\ macros generated from the result files (\texttt{reports/generated/numbers.tex}).
+Code, tests and the pre-registration are at \url{https://github.com/BurnyCoder/causal-counterfactual-analysis-of-convolutional-neural-networks-with-concept-swaps-interventions}. Per-pair data are in the Hugging Face dataset \url{https://huggingface.co/datasets/BurnyCoder/inceptionv1-curve-concept-swaps}. All numbers in this paper are \LaTeX\ macros generated from the result files (\texttt{reports/generated/numbers.tex}).
 
 Runtime is 57 minutes on an RTX~5070 Laptop GPU (8\,GB), plus 22 minutes for the post-hoc checks, 5 minutes for the second audit's checks, 4 minutes for the third audit's and 3 minutes for the output-only example figures (Appendix~\ref{app:examples}). Determinism: TF32 is disabled, and stimuli, pairs and null sets are seeded from one random stream in a fixed phase order, so only the full pipeline run reproduces the null sets exactly. Quick-mode runs of the commits that produced each result file and of the final code agree exactly in every shared field; the full confirmatory run was not repeated. The cropped-window recomputation equals the same block run on the full map in fp64 (unit test tolerance $10^{-9}$; measured difference 0).
 
