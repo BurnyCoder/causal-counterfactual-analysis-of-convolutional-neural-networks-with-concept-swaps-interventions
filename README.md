@@ -160,8 +160,9 @@ Full write-ups:
   - **IIA**: how often the decoded orientation becomes the source's.
   - A **normalized effect** from 0 to 1.
 - Controls:
-  - 2000 **activation-change-matched** null sets.
-  - 2000 **branch-matched** null sets.
+  - **Activation-change-matched** null sets: 2000 for H1 and H4, 1000 for H2, 500 for the ridge readout, the
+    jitter seeds and the LRN check (`n_sets` in `results/e2_synthetic.json`).
+  - **Branch-matched** null sets, with the same sizes.
   - Fisher top-10, the complement and all channels.
 - Secondary tests: H2, a curvature swap (line ↔ arc); H4, the 3a → 3b curve circuit.
 - Robustness: two extra jitter seeds and the default-LRN model.
@@ -183,10 +184,10 @@ Further reading:
 
 ## Quick start
 ```bash
-git clone https://github.com/BurnyCoder/counterfactually-causal-analysis-of-convolutional-neural-networks-with-concept-swaps
+git clone https://github.com/BurnyCoder/causal-counterfactual-analysis-of-convolutional-neural-networks-with-concept-swaps-interventions
 ```
 ```bash
-cd counterfactually-causal-analysis-of-convolutional-neural-networks-with-concept-swaps
+cd causal-counterfactual-analysis-of-convolutional-neural-networks-with-concept-swaps-interventions
 ```
 ```bash
 uv sync
